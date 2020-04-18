@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<script language="javascript" type="text/javascript">
+    function BGM(){
+    var myAuto = document.getElementById('BGM');
+    BGM.play();
+    }
+</script>
+<style type="text/css">
+    .background{
+    background:url(picture/background.jpg)repeat;
+    background-repeat:no-repeat;
+    background-size: 100%auto;
+    filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    /opacity: 0.5;
+    height:1600px;
+    margin:-450px 0px 0px 0px;
+    position:static;
+    };
+    .main{
+        position:relative; 
+        left:0px; top:0px;
+        width:auto;
+        height:auto;
+    }
+    .BG{
+        position:absolute;
+        width:auto;
+        height:auto;
+    }
+    .box{
+        background-color: aqua;
+        width:200px;
+        height:200px;
+        display:inline-block;
+        font-size:30px;
+    }
+</style>
+<body>
+    <div class="main">
+    <div style="position: relative;">
+        <h1 style="background:rgba(200,200,200,0.5);font-size:50px;">
+            <br><center>Ngai Ho Chan</center>
+            <br><center>You Can Call Me</center>
+            <br><center>Liam</center>
+        </h1>
+    </div>
+    <div class="background"></div>
+    <div    style="margin:-1100px 0px 0px 0px;"">
+        <center><img src="picture/Liam1.jpg" width="500px" height="auto"/></center>
+    </div>
+    <center>
+        <div>
+            <div class="box">
+                <br>To Know 
+                <br>Something 
+                <br>About
+                <br>
+                <a href="Me.html">
+                    <button onclick="BGM()">Me</button>
+                </a>
+            </div>
+            <div class="box">
+                <br>To Know 
+                <br>Something 
+                <br>About
+                <br>
+                    <a href="My_Work.html">
+                        <button>My Work</button>
+                    </a>
+            </div>
+        </div>
+    </center>
+    <audio controls loop="loop" autoplay="autoplay" src="music/Loser.mp3" id="BGM"><source src="music/Loser.mp3"></audio>
+    </div>
+</body>
+</html>
